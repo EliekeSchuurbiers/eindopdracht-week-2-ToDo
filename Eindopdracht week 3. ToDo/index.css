@@ -1,27 +1,33 @@
 body{
-    background-color: gray;
+    background-color: #4c6c70;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 50%;
     position: center;
     margin-left: 25%;
+    border: solid black 2px;
     
 }
 p{
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    border: solid black 2px;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    background-color: #597d82;
+    
 
 }
 #input{
-    float: middle;
     text-align: center;
     border: solid black 2px;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
 
 }
 img{
     height: 20px;
     float: right;
+    margin-right: 20px;
     
 }
 
@@ -39,7 +45,7 @@ li{
 }
 
 .tasktrue{
-    color:pink;
+    color:#444;
     text-decoration: line-through;
     font-weight: bold;
     font-size: 26px;
@@ -47,7 +53,7 @@ li{
 }
 
 .taskfalse{
-    color: blue;
+    color: #fff;
     font-weight: bold;
     font-size: 26px;
 }

@@ -35,9 +35,9 @@ const addTask = async function (task) {
     }
 };
 
-// const taskID = document.getElementsByTagName("img").id;
-const deleteTask = async function (task) {
-    const apiURL = `https://wincacademydatabase.firebaseio.com/elieke/tasks/${task}.json`
+
+const deleteTask = async function (taskId) {
+    const apiURL = `https://wincacademydatabase.firebaseio.com/elieke/tasks/${taskId}.json`
     try {
         const res = await fetch(apiURL,
             {
@@ -50,12 +50,13 @@ const deleteTask = async function (task) {
     }
 };
 
-const TaskDone = async function (task) {
-    const apiURL = `https://wincacademydatabase.firebaseio.com/elieke/tasks/${task}.json`
+const updateTask = async function (taskId, task) {
+    const apiURL = `https://wincacademydatabase.firebaseio.com/elieke/tasks/${taskId}.json`
     try {
         const res = await fetch(apiURL,
             {
-                method: "Put",
+                method: "PUT",
+                body: JSON.stringify(task)
             });
 
     }

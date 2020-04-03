@@ -1,14 +1,53 @@
-img{
-    height: 10px;
-    float: right;
-    margin-right: 1500px
+body{
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    position: center;
+    margin-left: 25%;
+    
 }
+p{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    border: solid black 2px;
+
+}
+#input{
+    float: middle;
+    text-align: center;
+    border: solid black 2px;
+
+}
+img{
+    height: 20px;
+    float: right;
+    
+}
+
 li{
     list-style-type: none;
+    text-align: center;
+    margin-left: 30px;
+    
 }
 
 #check{
     float: left;
-    margin: 0;
+    margin-left: -20px;
+    margin-top: 10px;
 }
 
+.tasktrue{
+    color:pink;
+    text-decoration: line-through;
+    font-weight: bold;
+    font-size: 26px;
+
+}
+
+.taskfalse{
+    color: blue;
+    font-weight: bold;
+    font-size: 26px;
+}
